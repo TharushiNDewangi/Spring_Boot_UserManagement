@@ -1,0 +1,15 @@
+
+UserService Interface
+public interface UserService extends UserDetailsService {
+    User save(UserRegistrationDto registrationDto);
+we want to pass dto object then create dto type object to pass data server to client
+
+UserRegistrationDto class
+public class UserRegistrationDto {
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String password;
+
+UserServiceImpl class
+implement UserService interface
