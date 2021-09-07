@@ -1,4 +1,8 @@
+User class(many to may with Role class)
 
+Role class
+
+User Repository Interface
 UserService Interface
 public interface UserService extends UserDetailsService {
     User save(UserRegistrationDto registrationDto);
@@ -13,3 +17,12 @@ public class UserRegistrationDto {
 
 UserServiceImpl class
 implement UserService interface
+
+UserRegistration class
+UserRegistration controller class for control registration
+
+Main controller class
+for handle login
+
+Security configuration class
+it is like middleware in node. controll all security related things
